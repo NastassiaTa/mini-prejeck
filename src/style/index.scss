@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'OpenSans';
+    font-weight: 400;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #F5F5F5;
+}
+
+main {
+    width: 375px;
+    margin: 10px auto;
+    padding: 24px;
+    background-color: #F9F9FB;
+    box-shadow: 10px 10px 17px 0px rgba(194, 194, 194, 1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+
+    &_item {
+        position: relative;
+        height: 216px;
+        border-radius: 24px;
+        overflow: hidden;
+        background: #ececec;
+    }
+
+    &_img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+    }
+
+    &_rating {
+        color: #fff;
+        left: 16px;
+    }
+
+    &_like {
+        right: 16px;
+    }
+}
+
+.slider_like,
+.slider_rating,
+.slider_dots {
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+}
+
+.rating {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 4px 8px 5px;
+
+    &_img {
+        margin-right: 6px;
+    }
+}
+
+
+.like {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 20px;
+}
+
+
+.dots {
+    left: 0;
+    right: 0;
+    bottom: 18px;
+    top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 8px;
+
+    &_item {
+        background-color: rgba(249, 249, 251, 0.7);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-left: 6px;
+
+        &__active {
+            width: 8px;
+            height: 8px;
+            background-color: #F9F9FB;
+        }
+    }
+}
+
+
+.hotel-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    &_price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.title {
+    color: rgba(70, 70, 70, 1);
+    font-size: 18px;
+}
+
+.location {
+    color: rgba(161, 167, 176, 1);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.price {
+    color: rgba(76, 159, 193, 1);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.month {
+    color: rgba(161, 167, 176, 1);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.hotel-badge {
+    display: flex;
+    margin-top: 12px;
+
+    &_item {
+        margin-right: 20px;
+        color: rgba(161, 167, 176, 1);
+        font-size: 14px;
+    }
+
+    &_img {
+        width: 18px;
+        display: inline;
+        margin-right: 10px;
+
+    }
+}
+
+.hr {
+    background: rgba(161, 167, 176, 0.15);
+    height: 1px;
+    border: none;
+    margin: 14px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #464646;
+}
+
+.host {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.host-items {
+    display: flex;
+
+    &_img {
+        width: 40px;
+        margin-right: 12px;
+    }
+
+}
+
+.host-arrow {
+    width: 8px;
+    cursor: pointer;
+}
+
+.status {
+    color: #A1A7B0;
+    font-size: 14px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 36px;
+        width: 11px;
+        height: 13px;
+        background-image: url(../images/medal.svg);
+        
+    }
+}
+
+.name{
+    color: #464646;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.conveniences-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 12px;
+}
+
+.conveniences-items{    
+    background: #fff;
+    border-radius: 7px;
+    margin-right: 8px;
+    padding: 6px 8px;
+    white-space:nowrap;
+    font-size: 14px;
+}
+
+.reservation{
+    background: #fff;
+    border-radius: 20px;
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+}
+
+.reservation_price{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.reservation_month{
+    font-size: 10px;
+    font-weight: 500;
+    color: #A1A7B0;
+    ;
+}
+
+.btn{
+    border-radius: 12px;
+    color: #fff;
+    background-color: #4C9FC1;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+        url('../fonts/OpenSans-SemiBold.ttf') format('truetype'),
+        url('../fonts/OpenSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    // font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.woff') format('woff'),
+        url('../fonts/Raleway-Medium.ttf') format('truetype'),
+        url('../fonts/Raleway-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
